@@ -1,0 +1,92 @@
+.words-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.words-grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 60px;
+}
+.words-element__wrapper{
+  border: 2px solid rgba(0,0,0,0.4);
+  border-radius:5px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 20px 5px 20px 50px;
+}
+.words-element__wrapper__add{
+  border: 2px solid rgba(0,0,0,0.4);
+  border-radius:5px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  width: 360px;
+  height: 460px;
+}
+.words-title{
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: bold;
+  margin: auto;
+}
+.title-wrapper__word{
+  display: flex;
+  justify-content: space-between;
+}
+.description-container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.description-p{
+  font-size: 22px;
+  line-height: 26px;
+}
+.image-block{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.delete-btn__word{
+  width: 45px;
+  height: 45px;
+  border-radius:50%;
+  background: url("../../assets/cross.png") center no-repeat;
+  border-color: transparent;
+}
+.delete-btn__word:hover{
+  cursor: pointer;
+}
+.word-image{
+  width: 250px;
+}
+.button-block__word{
+  display: flex;
+}
+.button-word{
+  border-color: #00bf82;
+  background-color: transparent;
+  color: #00bf82;
+  font-size: 22px;
+  line-height: 26px;
+  border-radius: 5px;
+  width: 250px;
+  height: 60px;
+}
+.button-word:hover{
+  cursor: pointer;
+}
+.add-btn__word{
+  width: 150px;
+  height: 150px;
+  border-radius:50%;
+  background: url("../../assets/add.png") center no-repeat;
+  background-size: cover;
+  border-color: transparent;
+  margin: auto;
+}
+.add-btn__word:hover{
+  cursor: pointer;
+}

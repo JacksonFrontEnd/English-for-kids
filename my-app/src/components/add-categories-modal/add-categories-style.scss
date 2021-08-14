@@ -1,0 +1,72 @@
+.login-modal-wrapper{ 
+  display: flex; 
+  z-index: 10; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  bottom: 0; 
+  right: 0; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: rgba(0,0,0,0.4); 
+} 
+
+.login-modal { 
+  position: relative; 
+  display: flex; 
+  flex-direction: column; 
+  width: 812px; 
+  height: 570px;
+  background-color: #fff; 
+}
+
+.modal-title{
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: normal;
+  margin: auto;
+}
+
+.form{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+}
+
+.input-block{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.text-field{
+  width: 556px;
+  height: 62px;
+  margin-left: 60px;
+  border: 0;
+  border-bottom: 1px solid #000;
+}
+
+.button-block{
+  background-color:#4fbe79;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  padding: 23px 0;
+}
+
+.btn{
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 250px;
+  height: 60px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.reset{
+  background-color: #e53935;
+}

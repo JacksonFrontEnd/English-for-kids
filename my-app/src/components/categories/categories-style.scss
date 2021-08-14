@@ -1,0 +1,84 @@
+.category-container{
+  display: flex;
+  justify-content: center;
+}
+
+.category-grid{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+}
+
+.category-element__wrapper{
+  width: 300px;
+  height: 250px;
+  border: 2px solid rgba(0,0,0,0.4);
+  border-radius:5px;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 15px;
+}
+
+.title-h1{
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.title-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete-btn{
+  width: 45px;
+  height: 45px;
+  border-radius:50%;
+  background: url("../../assets/cross.png") center no-repeat;
+  border-color: transparent;
+}
+
+.delete-btn:hover{
+  cursor: pointer;
+}
+
+.words-counter{
+  font-size: 22px;
+  line-height: 26px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.categories-button-block{
+  display: flex;
+  gap: 40px;
+}
+
+.button{
+  border-color: #00bf82;
+  background-color: transparent;
+  color: #00bf82;
+  font-size: 22px;
+  border-radius: 5px;
+  width: 140px;
+  height: 35px;
+}
+
+.button:hover{
+  cursor: pointer;
+}
+
+.add-btn{
+  width: 85px;
+  height: 85px;
+  border-radius:50%;
+  background: url("../../assets/add.png") center no-repeat;
+  border-color: transparent;
+  margin: auto;
+}
+
+.add-btn:hover{
+  cursor: pointer;
+}

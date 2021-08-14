@@ -1,0 +1,73 @@
+.card-wrapper {
+  z-index: 3;
+  margin: 1%;
+  flex: 1 0 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  perspective: 500px;
+  cursor: pointer;
+
+  &:hover > .card {
+    transform: translateZ(2rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  }
+  &.flipped > .card {
+    transform: rotateY(180deg) translateX(-100%);
+    transform-origin: left;
+  }
+}
+.card-container {
+  z-index: 2;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  gap: 135px;
+  vertical-align: center;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.playButton{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  text-transform: uppercase;
+  font-size: 24px;
+  border-color: #00BF9A;
+  background-color: #00BF9A;
+  color: #fff;
+  transition: box-shadow .3s;
+}
+.playButton:hover{
+  cursor: pointer;
+  box-shadow: 0 0 50px rgba($color: #00BF9A, $alpha: .7);
+}
+.star-block{
+  display: flex;
+  height: 50px;
+}
+@media (min-width: 961px) and (max-width: 1199px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+  }
+}
+@media (min-width: 661px) and (max-width: 960px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+}
+@media (max-width: 660px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
